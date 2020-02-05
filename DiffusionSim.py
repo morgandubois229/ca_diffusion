@@ -9,7 +9,7 @@ def diffusionSim(m, n, diffusionRate, t):
     grids.append(bar)
     for i in range(t):
         barExtend = reflectingLat(bar)
-        bar = applyDiffusionExtended(diffusionRate, barExtended)
+        bar = applyDiffusionExtended(m, n, diffusionRate, barExtended)
         bar = applyHotCold(bar, hotSites, coldSite)
         grids.append(bar)
     return grids
