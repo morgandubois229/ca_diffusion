@@ -2,7 +2,7 @@
 
 #Preconditions: lat is a grid
 #Postconditions: lat has changed due to diffusion
-def diffusionExtended(m, n, latExt):
+def applyDiffusionExtended(m, n, latExt):
     #Create lat, a lattice of latExt wihout the extended boundaries
     lat = [[]]
     
